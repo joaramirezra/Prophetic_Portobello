@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo Fúngico</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Capítulo Fúngico</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ url_for('static', filename='img/banner.jpeg') }}'); background-size: cover; color: white; height: 80vh; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <h1>Bienvenidos al club Oráculo Fúngico</h1>
+        <p>Dedicado al estudio y apreciación de los hongos.</p>
+        <a href="#" class="btn btn-light btn-lg mt-3">Únete a nosotros</a>
+    </header>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section class="container text-center py-5">
+        <h2>Acerca de Nosotros</h2>
+        <p>Nuestro capítulo se centra en el estudio, conservación y apreciación de los hongos. Realizamos talleres, excursiones y seminarios para difundir el conocimiento sobre el fascinante mundo de los hongos.</p>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Galería</h2>
+        <!-- Imágenes de relleno; reemplazar con imágenes reales -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="static/img/blog.jpg" alt="Imagen de hongo 1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="static/img/tools.jpg" alt="Imagen de hongo 2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="static/img/others.jpg" alt="Imagen de hongo 3" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Únete a Nosotros -->
+    <section class="text-center py-5 bg-dark text-white">
+        <h2>Únete a Nosotros</h2>
+        <p>¿Interesado en hongos? ¡Únete a nuestro capítulo y sumérgete en el mundo de la micología con nosotros!</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Saber Más</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4 bg-light">
+        <p>Síguenos en <a href="#">Facebook</a>, <a href="#">Twitter</a>, y <a href="#">Instagram</a>.</p>
+        <p>Contacto: [email@example.com]</p>
+    </footer>
+
+    <!-- JS para Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Enlace al archivo JavaScript personalizado -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
+
